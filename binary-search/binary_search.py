@@ -12,12 +12,12 @@ class BinarySearch():
             if guess > item:
                 high = mid - 1
             else:
-                low = mid - 1
+                low = mid + 1
         return None
 
 if __name__ == "__main__":
-  list_items = [1,2,3,4,5,65,7,4,8,4,7,9,0,33,4,55,3,23,5,6]
+  list_items = [1,2,3,4,5,6,7]
   sorted_list_items = sorted(list_items)
 
   bs = BinarySearch()
-  print(bs.search_iterative(sorted_list_items, 4))
+  print(bs.search_iterative(sorted_list_items, 2))
